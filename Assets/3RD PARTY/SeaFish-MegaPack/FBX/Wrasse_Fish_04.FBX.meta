@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: f226db8e88368ac48bdb3dd26045351c
+timeCreated: 1491682999
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: RedCorisWrasse_bone00
+    100002: RedCorisWrasse_bone01
+    100004: RedCorisWrasse_bone02
+    100006: RedCorisWrasse_bone03
+    100008: RedCorisWrasse_bone04
+    100010: RedCorisWrasse_bone05
+    100012: RedCorisWrasse_bone06
+    100014: //RootNode
+    100016: Wrasse_Fish_04
+    400000: RedCorisWrasse_bone00
+    400002: RedCorisWrasse_bone01
+    400004: RedCorisWrasse_bone02
+    400006: RedCorisWrasse_bone03
+    400008: RedCorisWrasse_bone04
+    400010: RedCorisWrasse_bone05
+    400012: RedCorisWrasse_bone06
+    400014: //RootNode
+    400016: Wrasse_Fish_04
+    4300000: Wrasse_Fish_04
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Wrasse_Fish_04
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RedCorisWrasse_bone00
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone01
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone01/RedCorisWrasse_bone02
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone03
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone03/RedCorisWrasse_bone04
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone05
+        weight: 1
+      - path: RedCorisWrasse_bone00/RedCorisWrasse_bone05/RedCorisWrasse_bone06
+        weight: 1
+      - path: Wrasse_Fish_04
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
