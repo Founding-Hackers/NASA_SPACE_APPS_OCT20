@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class M_MoveForward : MonoBehaviour
 {
-    // Start is called before the first frame update
+      /*
+      * Author: Matthew Thompson, 10/3/20
+      * This is a generic/placeholder script to make my placeholder player object move forward
+      */
+
+    public int speed = 50;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.forward * 25 * Time.deltaTime;
+        transform.position += Vector3.forward * speed * Time.deltaTime; // move forward at a given speed per update
     }
 }

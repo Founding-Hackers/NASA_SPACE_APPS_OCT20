@@ -4,40 +4,31 @@ using UnityEngine;
 
 public class M_Platform : MonoBehaviour
 {
+      /*
+      * Author: Matthew Thompson, 10/3/20
+      * This script deals with collisions to trigger deleting a platform that is no longer in the player's view
+      */
 
-    private M_PlatformManager manager;
+    private M_PlatformManager manager; // object containing platform manager script, should only be one
+    private float timeToWait = 1.0f; // time between trigger and delete
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collision Enter");
-    }
 
     private IEnumerator OnTriggerExit(Collider other)
     {
-        Debug.Log("CollisionExit");
+        // Debug.Log("CollisionExit");
+        // if the player leaves the collision box, wait two seconds and then recycle the platform
         if (other.CompareTag("Player"))
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(timeToWait);
             Debug.Log("Reached end of platform");
             manager.RecyclePlatform(this.transform.parent.gameObject);
         }
     }
 
+    // finds and sets game manager on object enable
     private void OnEnable()
     {
         manager = GameObject.FindObjectOfType<M_PlatformManager>();
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
