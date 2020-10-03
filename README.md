@@ -25,8 +25,8 @@
 ---
 
 ## Features
-## Usage (Optional)
-## Documentation (Optional)
+## Usage 
+## Documentation 
 
 > Data being utilized for this project to meet the requirements of the Nasa Submission: https://svs.gsfc.nasa.gov/4375
 + https://earthobservatory.nasa.gov/blogs/fromthefield/2017/10/26/plastic-plastic-where-is-all-our-plastic/
