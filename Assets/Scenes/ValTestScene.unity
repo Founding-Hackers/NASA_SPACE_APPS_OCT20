@@ -6128,7 +6128,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1886386730}
   - component: {fileID: 1886386729}
-  - component: {fileID: 1886386728}
   m_Layer: 0
   m_Name: BackgroundCamera
   m_TagString: Untagged
@@ -6136,14 +6135,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1886386728
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886386727}
-  m_Enabled: 1
 --- !u!20 &1886386729
 Camera:
   m_ObjectHideFlags: 0
@@ -6258,9 +6249,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 23138456657185482, guid: 17c5899683fc5714888b118cff5777db,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23138456657185482, guid: 17c5899683fc5714888b118cff5777db,
+        type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23138456657185482, guid: 17c5899683fc5714888b118cff5777db,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0901bd31274b7c24a907731fa5e16f5f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c5899683fc5714888b118cff5777db, type: 3}
 --- !u!1 &1978190287 stripped
