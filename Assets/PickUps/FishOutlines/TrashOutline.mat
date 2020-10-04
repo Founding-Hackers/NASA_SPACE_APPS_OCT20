@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SimpleOutline 4
+  m_Name: SimpleOutline 7
   m_Shader: {fileID: 4800000, guid: b3e5c8d133286e54aae891780ecfc35c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a8202028b92e4f649804930f9b34e10c, type: 3}
+        m_Texture: {fileID: 2800000, guid: c992d8464a4a561499b5c2047a4b4ca2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -76,5 +76,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0.004911661, g: 1, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0.12884095, b: 0, a: 1}
   m_BuildTextureStacks: []
