@@ -36,7 +36,7 @@ public class CoinMagnet : Consumable
 
         for(int i = 0; i< nb; ++i)
         {
-			Coin returnCoin = returnColls[i].GetComponent<Coin>();
+			Pickup returnCoin = returnColls[i].GetComponent<Pickup>();
 
 			if (returnCoin != null && !returnCoin.isPremium && !c.characterCollider.magnetCoins.Contains(returnCoin.gameObject))
 			{

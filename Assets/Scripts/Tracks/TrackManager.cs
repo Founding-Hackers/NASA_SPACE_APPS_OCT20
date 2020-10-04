@@ -235,7 +235,7 @@ public class TrackManager : MonoBehaviour
 
             m_SafeSegementLeft = m_IsTutorial ? 0 : k_StartingSafeSegments;
 
-            Coin.coinPool = new Pooler(currentTheme.collectiblePrefab, k_StartingCoinPoolSize);
+            Pickup.pickUpPool = new Pooler(currentTheme.collectiblePrefab, k_StartingCoinPoolSize);
 
             PlayerData.instance.StartRunMissions(this);
 
@@ -649,7 +649,7 @@ public class TrackManager : MonoBehaviour
                     }
                     else
                     {
-                        toUse = Coin.coinPool.Get(pos, rot);
+                        toUse = Pickup.pickUpPool.Get(pos, rot);
                         toUse.transform.SetParent(segment.collectibleTransform, true);
                     }
 

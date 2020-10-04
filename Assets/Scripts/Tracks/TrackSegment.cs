@@ -88,7 +88,7 @@ public class TrackSegment : MonoBehaviour
 		{
 			Transform t = collectibleTransform.GetChild(0);
 			t.SetParent(null);
-            Coin.coinPool.Free(t.gameObject);
+            Pickup.pickUpPool.Free(t.gameObject);
 		}
 
 	    Addressables.ReleaseInstance(gameObject);
