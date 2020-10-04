@@ -107,7 +107,7 @@ public class CharacterCollider : MonoBehaviour
 			if (magnetCoins.Contains(c.gameObject))
 				magnetCoins.Remove(c.gameObject);
 
-			if (c.GetComponent<Coin>().isPremium)
+			if (c.GetComponent<Pickup>().isPremium)
             {
 				Addressables.ReleaseInstance(c.gameObject);
                 PlayerData.instance.premium += 1;
@@ -116,8 +116,8 @@ public class CharacterCollider : MonoBehaviour
 			}
             else
             {
-				Coin.coinPool.Free(c.gameObject);
-                PlayerData.instance.coins += 1;
+				Pickup.pickUpPool.Free(c.gameObject);
+                PlayerData.instance.pickups += 1;
 				controller.coins += 1;
 				m_Audio.PlayOneShot(coinSound);
             }
