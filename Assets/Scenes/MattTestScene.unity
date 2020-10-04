@@ -243,8 +243,32 @@ MonoBehaviour:
   platformInstances: []
   recentlyUsed: 00000000
   prefabLength: 100
-  minPlatformNum: 8
+  minPlatformNum: 6
   minNumOfEach: 3
+  pickupPrefabs:
+  - {fileID: 9169528432169802742, guid: e4501db3a559585419390e1c6345c2f9, type: 3}
+  trashObjects:
+  - {fileID: 862431713264922649, guid: 6372781af32288747ad408000d4546a6, type: 3}
+  - {fileID: 1805028283602904706, guid: e9252e75f55a5644faa9678397daa1a9, type: 3}
+  - {fileID: 3782397710290693621, guid: 05672cf3a57b2b34c824772beb08820e, type: 3}
+  - {fileID: 7111806832962371031, guid: 8714c943130db644eabe9f35bbd0dd17, type: 3}
+  - {fileID: 5333945040590429076, guid: 1aa051937c93a4548a7469b9897cf418, type: 3}
+  - {fileID: 8260888477330973285, guid: 4d7da9ff25179b341a3aa58c920de23f, type: 3}
+  fishObjects:
+  - {fileID: 7197476523632930055, guid: 27712c4a2de795745b41c008381de8da, type: 3}
+  - {fileID: 9113113591974816491, guid: fd363e9f685871b499b3c4c1ba591fd9, type: 3}
+  - {fileID: 6303893706199245763, guid: 3e691598f165b244e87dbbaf9c587621, type: 3}
+  - {fileID: 3422083495244053156, guid: b9f8b45ba74c77a4981aea22895691a7, type: 3}
+  - {fileID: 55181852496902450, guid: c1a56fce92aca2845b22b8bcc484bcfc, type: 3}
+  - {fileID: 3794176875841556640, guid: fe67547a325231e478c63ccc4fd59336, type: 3}
+  - {fileID: 2188078986400357715, guid: 0cfabb7c3b6e3ef49984f77cc03085e3, type: 3}
+  - {fileID: 8317325230784981929, guid: b2e2d0e217c2cfb4c88360c3b21a7cb9, type: 3}
+  - {fileID: 8100846466627482273, guid: 217fa96765552eb42bbfcd1f1958bf5c, type: 3}
+  - {fileID: 3860886693483041026, guid: 74460ecff3b9fb14db4aab025e208a97, type: 3}
+  - {fileID: 522825480583667680, guid: c66a6a29f65beee4a9699e8cfc14f6b5, type: 3}
+  - {fileID: 4006832466866347419, guid: f95c489039e53d049afcd8a1b16aee8e, type: 3}
+  - {fileID: 8509921198610335209, guid: 9b02163b1f8b71545b1de5cc6bd71b2c, type: 3}
+  - {fileID: 8997557919369037358, guid: cc49418d273d0d647a30afad84ee94b1, type: 3}
 --- !u!4 &449326242
 Transform:
   m_ObjectHideFlags: 0
@@ -535,7 +559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522555302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.235, z: -47.4}
+  m_LocalPosition: {x: 0, y: 15, z: -47.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 47353464}
@@ -554,7 +578,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14ecce504509ca42be1d1f372b9d373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  HLane: 2
+  VLane: 2
+  speed: 10
+  lerpSpeed: 0.05
 --- !u!54 &1522555308
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -565,7 +592,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.075
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0

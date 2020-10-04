@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7110978132116760590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862431713264922649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca98ffa428d5e664982ca945d582252c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &861098018279803043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9,7 +21,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1342534575175866, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
       propertyPath: m_Name
-      value: beach-bag
+      value: beach-bag Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342534575175866, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,6 +71,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 23828691729410952, guid: 7383b1858159b46979f84c9ba52d320f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -67,3 +95,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f23f567a4913fd74ea32b68a2b2be406, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+--- !u!1 &862431713264922649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1342534575175866, guid: 7383b1858159b46979f84c9ba52d320f,
+    type: 3}
+  m_PrefabInstance: {fileID: 861098018279803043}
+  m_PrefabAsset: {fileID: 0}
