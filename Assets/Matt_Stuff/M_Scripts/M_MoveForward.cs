@@ -14,7 +14,7 @@ public class M_MoveForward : MonoBehaviour
     public int VLane = 2; // 1 = down, 2 = middle, 3 = up
     [SerializeField] int speed = 50;
     float targetX = 0;
-    float targetY = 15;
+    float targetY = 25;
     [SerializeField] float lerpSpeed = .05f;
 
     void Start()
