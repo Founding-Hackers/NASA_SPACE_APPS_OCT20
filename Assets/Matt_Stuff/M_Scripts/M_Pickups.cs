@@ -27,10 +27,10 @@ public class M_Pickups : MonoBehaviour
 
     public void OnBecameInvisible()
     {
-        foreach (Transform child in this.gameObject.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        //foreach (Transform child in this.gameObject.transform)
+        //{
+        //    Destroy(child.gameObject);
+        //}
 
         Destroy(this.gameObject);
     }

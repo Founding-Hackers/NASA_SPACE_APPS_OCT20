@@ -110,6 +110,8 @@ public class M_PlatformManager : MonoBehaviour
 
             Vector3 coord = child.gameObject.transform.position;
             Destroy(child.gameObject);
+            float xOffset = Random.Range(-.5f, .5f);
+            coord = new Vector3(coord.x + xOffset, coord.y, coord.z);
 
             // if the object is a pickup, repllace it with a random trash object
             if (isPickup)
