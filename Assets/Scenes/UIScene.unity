@@ -374,6 +374,35 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_text
+      value: 'Our oceans recieve about 8 million metric tons of trash every year.
+        There is so much trash in our ocean, large patches of garbage have been forming
+        underwater. These patches are known as a Trash Vortex. Help clean the ocean
+        with Slorp the sea turtle by collecting trash!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 271
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 224
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 419756170, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_IsActive
       value: 0
