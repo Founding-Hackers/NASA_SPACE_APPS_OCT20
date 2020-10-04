@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1875389735474708, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
       propertyPath: m_Name
-      value: water-bottle
+      value: water-bottle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4607707179994006, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,6 +54,18 @@ PrefabInstance:
     - target: {fileID: 4607707179994006, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607707179994006, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607707179994006, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607707179994006, guid: 051a30049c31948d8956ef9fc0b81c13, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 23640863304328254, guid: 051a30049c31948d8956ef9fc0b81c13,
         type: 3}

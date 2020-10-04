@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1342534575175866, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
       propertyPath: m_Name
-      value: beach-bag
+      value: beach-bag Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,6 +54,18 @@ PrefabInstance:
     - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619905930385620, guid: 7383b1858159b46979f84c9ba52d320f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 23828691729410952, guid: 7383b1858159b46979f84c9ba52d320f,
         type: 3}

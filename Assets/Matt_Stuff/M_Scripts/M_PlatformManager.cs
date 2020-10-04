@@ -21,6 +21,10 @@ public class M_PlatformManager : MonoBehaviour
     [SerializeField] private int minNumOfEach = 3; // minimum number of each platform to be instantiated, currently unused.
     private int platformNum = -1;
 
+    [SerializeField] GameObject[] pickupPrefabs;
+    [SerializeField] GameObject[] trashObjects;
+    [SerializeField] GameObject[] fishObjects;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,8 @@ public class M_PlatformManager : MonoBehaviour
         {
             CreatePlatform();
         }
+
+
     }
 
     // creates a new instance of a platform at the current offset, chooses randomly and ensures that prefabs
@@ -74,8 +80,47 @@ public class M_PlatformManager : MonoBehaviour
         recentlyUsed[platformNum] = true;
 
         // increments offset
+
+        int spawnNum = Random.Range(0, pickupPrefabs.Length - 1);
+
+        GameObject pickup = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 10, offset), Quaternion.Euler(0, 0, 0));
+        SpawnObjects(pickup);
+
         offset += prefabLength;
     }
+
+    void SpawnObjects(GameObject pickups)
+    {
+        foreach (Transform child in pickups.transform)
+        {
+            bool isPickup = false;
+            bool isObstacle = false;
+            if (child.CompareTag("Pickup"))
+            {
+                isPickup = true;
+            }
+            else if (child.CompareTag("Obstacle"))
+            {
+                isObstacle = true;
+            }
+
+            Vector3 coord = child.gameObject.transform.position;
+            Destroy(child.gameObject);
+
+            if (isPickup)
+            {
+                int trashNum = Random.Range(0, trashObjects.Length);
+                Instantiate(trashObjects[trashNum], coord, Quaternion.Euler(0, 0, 0));
+            }
+            else if (isObstacle)
+            {
+                int fishNum = Random.Range(0, fishObjects.Length);
+                Instantiate(fishObjects[fishNum], coord, Quaternion.Euler(0, 180, 0));
+            }
+
+        }
+    }
+
 
     // originally simply moved an object when out of view, now deletes it and creates a new platform
     public void RecyclePlatform(GameObject platform)
