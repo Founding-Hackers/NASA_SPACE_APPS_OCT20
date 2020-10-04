@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 13636630}
   - component: {fileID: 11430804}
   - component: {fileID: 11473998}
+  - component: {fileID: 7574946134406128846}
   m_Layer: 0
   m_Name: LoggerheadSeaturtleLowPoly
   m_TagString: Untagged
@@ -807,6 +808,22 @@ MonoBehaviour:
   forwardAcceleration: 0
   turnAcceleration: 0
   upDownAcceleration: 0
+--- !u!114 &7574946134406128846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14ecce504509ca42be1d1f372b9d373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HLane: 2
+  VLane: 2
+  speed: 50
+  lerpSpeed: 0.05
 --- !u!1 &142054
 GameObject:
   m_ObjectHideFlags: 0

@@ -82,11 +82,11 @@ public class M_PlatformManager : MonoBehaviour
         // increments offset
 
         int spawnNum = Random.Range(0, pickupPrefabs.Length - 1);
-        GameObject pickupMid = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 10, offset), Quaternion.Euler(0, 0, 0));
+        GameObject pickupMid = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 20, offset), Quaternion.Euler(0, 0, 0));
         SpawnObjects(pickupMid);
 
         spawnNum = Random.Range(0, pickupPrefabs.Length - 1);
-        GameObject pickupTop = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 20, offset), Quaternion.Euler(0, 0, 0));
+        GameObject pickupTop = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 30, offset), Quaternion.Euler(0, 0, 0));
         SpawnObjects(pickupTop);
 
         offset += prefabLength;
@@ -110,6 +110,8 @@ public class M_PlatformManager : MonoBehaviour
 
             Vector3 coord = child.gameObject.transform.position;
             Destroy(child.gameObject);
+            float xOffset = Random.Range(-.5f, .5f);
+            coord = new Vector3(coord.x + xOffset, coord.y, coord.z);
 
             // if the object is a pickup, repllace it with a random trash object
             if (isPickup)
