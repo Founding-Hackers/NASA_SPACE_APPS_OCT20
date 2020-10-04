@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FancierBumpMap
+  m_Name: SeaRockWall
   m_Shader: {fileID: 4800000, guid: caf636b02b92d144e836fe60059f0442, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -56,16 +56,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myCube:
-        m_Texture: {fileID: 8900000, guid: 34a763168147f4182a21b9fd004d67de, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myDiffuse:
-        m_Texture: {fileID: 2800000, guid: fb9064a66b4469742b612f68d69d3f94, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myTex:
-        m_Texture: {fileID: 2800000, guid: d4939d6352727424389f896b7a566a22, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
@@ -84,10 +84,10 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _myBright: 2.2
-    - _myBumpHeight: 1.3
-    - _myScale: 1.6
-    - _mySlider: 0
+    - _myBright: 1
+    - _myBumpHeight: 1
+    - _myScale: 1
+    - _mySlider: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
