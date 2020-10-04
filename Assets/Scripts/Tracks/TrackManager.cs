@@ -203,8 +203,6 @@ public class TrackManager : MonoBehaviour
             }
             Character player = op.Result.GetComponent<Character>();
 
-            player.SetupAccesory(PlayerData.instance.usedAccessory);
-
             characterController.character = player;
             characterController.trackManager = this;
 

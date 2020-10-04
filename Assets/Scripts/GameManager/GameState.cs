@@ -5,9 +5,6 @@ using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-#if UNITY_ADS
-using UnityEngine.Advertisements;
-#endif
 #if UNITY_ANALYTICS
 using UnityEngine.Analytics;
 #endif
@@ -26,7 +23,7 @@ public class GameState : AState
 	public AudioClip gameTheme;
 
     [Header("UI")]
-    public Text coinText;
+    public Text pickupText;
     public Text premiumText;
     public Text scoreText;
 	public Text distanceText;
@@ -270,9 +267,6 @@ public class GameState : AState
                 m_PowerupIcons.Remove(toRemoveIcon[i]);
             }
 
-            if (m_IsTutorial)
-                TutorialCheckObstacleClear();
-
             UpdateUI();
 
             currentModifier.OnRunTick(this);
@@ -332,7 +326,7 @@ public class GameState : AState
 
     protected void UpdateUI()
     {
-        coinText.text = trackManager.characterController.coins.ToString();
+        pickupText.text = trackManager.characterController.coins.ToString();
         premiumText.text = trackManager.characterController.premium.ToString();
 
 		for (int i = 0; i < 3; ++i)
@@ -480,123 +474,8 @@ public class GameState : AState
 #endif
     }
 
-    //=== AD
-#if UNITY_ADS
-
-    private void HandleShowResult(ShowResult result)
-    {
-        switch (result)
-        {
-            case ShowResult.Finished:
-#if UNITY_ANALYTICS
-                AnalyticsEvent.AdComplete(adsRewarded, adsNetwork, adsPlacementId);
-#endif
-                SecondWind();
-                break;
-            case ShowResult.Skipped:
-                Debug.Log("The ad was skipped before reaching the end.");
-#if UNITY_ANALYTICS
-                AnalyticsEvent.AdSkip(adsRewarded, adsNetwork, adsPlacementId);
-#endif
-                break;
-            case ShowResult.Failed:
-                Debug.LogError("The ad failed to be shown.");
-#if UNITY_ANALYTICS
-                AnalyticsEvent.AdSkip(adsRewarded, adsNetwork, adsPlacementId, new Dictionary<string, object> {
-                    { "error", "failed" }
-                });
-#endif
-                break;
-        }
-    }
-#endif
 
 
-    void TutorialCheckObstacleClear()
-    {
-        if (trackManager.segments.Count == 0)
-            return;
-
-        if (AudioListener.pause && !trackManager.characterController.tutorialWaitingForValidation)
-        {
-            m_DisplayTutorial = false;
-            DisplayTutorial(false);
-        }
-
-        float ratio = trackManager.currentSegmentDistance / trackManager.currentSegment.worldLength;
-        float nextObstaclePosition = m_CurrentSegmentObstacleIndex < trackManager.currentSegment.obstaclePositions.Length ? trackManager.currentSegment.obstaclePositions[m_CurrentSegmentObstacleIndex] : float.MaxValue;
-
-        if (m_CountObstacles && ratio > nextObstaclePosition + 0.05f)
-        {
-            m_CurrentSegmentObstacleIndex += 1;
-
-            if (!trackManager.characterController.characterCollider.tutorialHitObstacle)
-            {
-                m_TutorialClearedObstacle += 1;
-                tutorialValidatedObstacles.text = $"{m_TutorialClearedObstacle}/{k_ObstacleToClear}";
-            }
-
-            trackManager.characterController.characterCollider.tutorialHitObstacle = false;
-
-            if (m_TutorialClearedObstacle == k_ObstacleToClear)
-            {
-                m_TutorialClearedObstacle = 0;
-                m_CountObstacles = false;
-                m_NextValidSegment = null;
-                trackManager.ChangeZone();
-
-                tutorialValidatedObstacles.text = "Passed!";
-
-                if (trackManager.currentZone == 0)
-                {//we looped, mean we finished the tutorial.
-                    trackManager.characterController.currentTutorialLevel = 3;
-                    DisplayTutorial(true);
-                }
-            }
-        }
-        else if (m_DisplayTutorial && ratio > nextObstaclePosition - 0.1f)
-            DisplayTutorial(true);
-    }
-
-    void DisplayTutorial(bool value)
-    {
-        if(value)
-            Pause(false);
-        else
-        {
-            Resume();
-        }
-
-        switch (trackManager.characterController.currentTutorialLevel)
-        {
-            case 0:
-                sideSlideTuto.SetActive(value);
-                trackManager.characterController.tutorialWaitingForValidation = value;
-                break;
-            case 1:
-                upSlideTuto.SetActive(value);
-                trackManager.characterController.tutorialWaitingForValidation = value;
-                break;
-            case 2:
-                downSlideTuto.SetActive(value);
-                trackManager.characterController.tutorialWaitingForValidation = value;
-                break;
-            case 3:
-                finishTuto.SetActive(value);
-                trackManager.characterController.StopSliding();
-                trackManager.characterController.tutorialWaitingForValidation = value;
-                break;
-            default:
-                break;
-        }
-    }
 
 
-    public void FinishTutorial()
-    {
-        PlayerData.instance.tutorialDone = true;
-        PlayerData.instance.Save();
-
-        QuitToLoadout();
-    }
 }

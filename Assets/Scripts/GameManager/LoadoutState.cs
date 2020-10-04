@@ -237,10 +237,7 @@ public class LoadoutState : AState
 
     public IEnumerator PopulateCharacters()
     {
-		accessoriesSelector.gameObject.SetActive(false);
-        PlayerData.instance.usedAccessory = -1;
-        m_UsedAccessory = -1;
-
+		
         if (!m_IsLoadingCharacter)
         {
             m_IsLoadingCharacter = true;
@@ -251,29 +248,7 @@ public class LoadoutState : AState
 
                 if (c != null)
                 {
-                    m_OwnedAccesories.Clear();
-                    for (int i = 0; i < c.accessories.Length; ++i)
-                    {
-						// Check which accessories we own.
-                        string compoundName = c.characterName + ":" + c.accessories[i].accessoryName;
-                        if (PlayerData.instance.characterAccessories.Contains(compoundName))
-                        {
-                            m_OwnedAccesories.Add(i);
-                        }
-                    }
-
-                    Vector3 pos = charPosition.transform.position;
-                    if (m_OwnedAccesories.Count > 0)
-                    {
-                        pos.x = k_OwnedAccessoriesCharacterOffset;
-                    }
-                    else
-                    {
-                        pos.x = 0.0f;
-                    }
-                    charPosition.transform.position = pos;
-
-                    accessoriesSelector.gameObject.SetActive(m_OwnedAccesories.Count > 0);
+               
 
                     AsyncOperationHandle op = Addressables.InstantiateAsync(c.characterName);
                     yield return op;
@@ -312,7 +287,7 @@ public class LoadoutState : AState
     void SetupAccessory()
     {
         Character c = m_Character.GetComponent<Character>();
-        c.SetupAccesory(PlayerData.instance.usedAccessory);
+     
 
         if (PlayerData.instance.usedAccessory == -1)
         {
@@ -322,8 +297,7 @@ public class LoadoutState : AState
         else
         {
 			accessoryIconDisplay.enabled = true;
-			accesoryNameDisplay.text = c.accessories[PlayerData.instance.usedAccessory].accessoryName;
-			accessoryIconDisplay.sprite = c.accessories[PlayerData.instance.usedAccessory].accessoryIcon;
+
         }
     }
 
