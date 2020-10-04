@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SimpleOutline 7
+  m_Name: TrashOutline
   m_Shader: {fileID: 4800000, guid: b3e5c8d133286e54aae891780ecfc35c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -76,5 +76,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 0.12884095, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0.8018868, b: 0.001783371, a: 1}
   m_BuildTextureStacks: []
