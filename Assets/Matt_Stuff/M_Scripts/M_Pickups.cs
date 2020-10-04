@@ -19,14 +19,19 @@ public class M_Pickups : MonoBehaviour
 
     void Update()
     {
-       // if (this.CompareTag("Pickup"))
-       // {
+        if (this.CompareTag("Pickup"))
+        {
             transform.Rotate(rotationDirection * Time.deltaTime);
-        //}
+        }
     }
 
     public void OnBecameInvisible()
     {
+        foreach (Transform child in this.gameObject.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
         Destroy(this.gameObject);
     }
 

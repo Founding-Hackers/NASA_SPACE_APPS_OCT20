@@ -82,5 +82,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cardinal_Fish_02 Variant Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3422083495244053156, guid: b9f8b45ba74c77a4981aea22895691a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6460388488097271601, guid: b9f8b45ba74c77a4981aea22895691a7, type: 3}
+    - {fileID: 3087823320096447826, guid: b9f8b45ba74c77a4981aea22895691a7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9f8b45ba74c77a4981aea22895691a7, type: 3}

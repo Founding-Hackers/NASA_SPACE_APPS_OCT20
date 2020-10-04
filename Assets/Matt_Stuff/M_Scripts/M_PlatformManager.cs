@@ -82,13 +82,17 @@ public class M_PlatformManager : MonoBehaviour
         // increments offset
 
         int spawnNum = Random.Range(0, pickupPrefabs.Length - 1);
+        GameObject pickupMid = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 10, offset), Quaternion.Euler(0, 0, 0));
+        SpawnObjects(pickupMid);
 
-        GameObject pickup = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 10, offset), Quaternion.Euler(0, 0, 0));
-        SpawnObjects(pickup);
+        spawnNum = Random.Range(0, pickupPrefabs.Length - 1);
+        GameObject pickupTop = Instantiate(pickupPrefabs[spawnNum], new Vector3(0, 20, offset), Quaternion.Euler(0, 0, 0));
+        SpawnObjects(pickupTop);
 
         offset += prefabLength;
     }
 
+    // iterates through all children of a prefab of pickups/obstacles and replaces placeholder objects
     void SpawnObjects(GameObject pickups)
     {
         foreach (Transform child in pickups.transform)
@@ -107,11 +111,13 @@ public class M_PlatformManager : MonoBehaviour
             Vector3 coord = child.gameObject.transform.position;
             Destroy(child.gameObject);
 
+            // if the object is a pickup, repllace it with a random trash object
             if (isPickup)
             {
                 int trashNum = Random.Range(0, trashObjects.Length);
                 Instantiate(trashObjects[trashNum], coord, Quaternion.Euler(0, 0, 0));
             }
+            // if the object is an obstacle, replace it with a random fish object
             else if (isObstacle)
             {
                 int fishNum = Random.Range(0, fishObjects.Length);

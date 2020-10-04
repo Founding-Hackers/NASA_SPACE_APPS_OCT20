@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7432211556312915131}
   - component: {fileID: 2225253811554349763}
   - component: {fileID: 9153632858625611656}
-  - component: {fileID: -8260726398397315640}
+  - component: {fileID: -2145656625504669867}
   m_Layer: 0
   m_Name: flip-flops
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-8260726398397315640
+--- !u!114 &-2145656625504669867
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
