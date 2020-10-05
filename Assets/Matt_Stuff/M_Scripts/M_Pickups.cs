@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class M_Pickups : MonoBehaviour
 {
+   
     protected int healthGained = 10;
     protected int xpGained = 10;
 
@@ -27,8 +28,6 @@ public class M_Pickups : MonoBehaviour
             transform.Rotate(rotationDirection * Time.deltaTime);
         }
 
-
-        PickUp();
     }
 
     public void OnBecameInvisible()
@@ -43,13 +42,26 @@ public class M_Pickups : MonoBehaviour
 
 
     void PickUp()
-    {            
+    {
+        if (this.CompareTag("Obstacle"))
+        {
+            V_PlayerManager.instance.charStats.TakeDamage(healthGained);
+            V_PlayerManager.instance.charStats.gainXP(-xpGained);
+        }
 
-
-            V_PlayerManager.instance.charStats.Heal(healthGained); //references character stats in the Playermanager Health
-            V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
+        if (this.CompareTag("PickUp"))
+        {
+           V_PlayerManager.instance.charStats.Heal(healthGained); //references character stats in the Playermanager Health
+           V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
+        }
+    
             Destroy(gameObject);
         
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        PickUp();
     }
 
 }

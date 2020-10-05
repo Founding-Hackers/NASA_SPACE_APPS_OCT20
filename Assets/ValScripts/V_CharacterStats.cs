@@ -13,7 +13,7 @@ public class V_CharacterStats : MonoBehaviour
     private void Awake()
     {
         currentHealth = maxhealth; //initial value
-        xp = 5;
+        xp = 0;
     }
 
     public void TakeDamage(int damage)
