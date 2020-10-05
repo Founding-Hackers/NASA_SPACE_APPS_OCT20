@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11467570, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_Text
+      value: Turtle VS Trash Vortex
+      objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -409,11 +413,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 224
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 6
+      value: 223
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 159494973, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_fontSize
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 419756170, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_IsActive
@@ -491,6 +503,13 @@ PrefabInstance:
     - target: {fileID: 2071217978, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693081416497967040, guid: 45616935e4fe10f48b62da1347801a16,
+        type: 3}
+      propertyPath: m_text
+      value: "Valarie  Adams - Programmer, manager, some art\nVincent  Prime- Menu\nMatthew
+        Thompson- Programmer, level designer\nTyler Shauger-  Level Designer \nMichael
+        Thompson- musical composer\nSuhit Agarwal- website\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
