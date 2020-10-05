@@ -45,8 +45,10 @@ public class M_Pickups : MonoBehaviour
     {
         if (this.CompareTag("Obstacle"))
         {
+            healthGained = -10;
+            xpGained = -10;
             V_PlayerManager.instance.charStats.TakeDamage(healthGained);
-            V_PlayerManager.instance.charStats.gainXP(-xpGained);
+            V_PlayerManager.instance.charStats.gainXP(xpGained);
             Debug.Log(" Obstacle picked up");
         }
 
