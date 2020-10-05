@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.AccessControl;
 using UnityEngine;
+using TMPro;
 
 public class M_MoveForward : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class M_MoveForward : MonoBehaviour
     * This is a generic/placeholder script to make my placeholder player object move forward
     */
 
+    public TextMeshProUGUI speedUI;
     public int HLane = 2; // 1 = left, 2 = middle, 3 = right
     public int VLane = 2; // 1 = down, 2 = middle, 3 = up
     [SerializeField] int minSpeed = 30;
@@ -44,6 +46,8 @@ public class M_MoveForward : MonoBehaviour
 
     void Update()
     {
+        speedUI.SetText("Speed: " + speed);
+
         transform.position += Vector3.forward * speed * Time.deltaTime; // move forward at a given speed per update
 
         if (Input.touchCount == 1)

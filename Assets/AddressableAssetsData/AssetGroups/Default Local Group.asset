@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 332528a16bcf1f34a92d19ea1e4587dc
-  m_SerializeEntries:
-  - m_GUID: f0eb3fc789dd1a341a1d1f2bda70c1f6
-    m_Address: Assets/Jam Menu/Settings ScriptableObjects/Menu Settings.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3da23b00a51776a448f2cfa1e1a27830, type: 2}
   m_SchemaSet:

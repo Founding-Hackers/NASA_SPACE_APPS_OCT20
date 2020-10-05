@@ -23,6 +23,8 @@ public class V_PlayerManager : MonoBehaviour
     public V_CharacterStats charStats;
     private int xpPM;
     public TextMeshProUGUI xpUI;
+    private int health;
+    public TextMeshProUGUI healthUI;
 
     public AudioClip gameMusic;
 
@@ -35,12 +37,21 @@ public class V_PlayerManager : MonoBehaviour
     void Update()
     {
         xpPM = charStats.xp;
-        xpUI.SetText("XP: " + xpPM);
+        xpUI.SetText("Score: " + xpPM);
+
+        health = charStats.currentHealth;
+        healthUI.SetText("Health: " + health);
+
+        if(charStats.currentHealth <= 0)
+        {
+            KillPlayer();
+        }
     }
 
     public void KillPlayer()
     {
-        SceneManager.LoadScene("FinalScene");
+
+        SceneManager.LoadScene("UIScene");
     }
 
 }

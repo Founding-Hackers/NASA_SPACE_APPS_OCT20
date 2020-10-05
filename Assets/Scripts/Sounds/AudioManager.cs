@@ -26,8 +26,11 @@ public class AudioManager : MonoBehaviour
     }
 
     #region Fields
+    [SerializeField]
     private AudioSource musicSource;
+    [SerializeField]
     private AudioSource ambientSource;
+    [SerializeField]
     private AudioSource sfxSource;
 
     private bool firstMusicSourceIsPlaying;
