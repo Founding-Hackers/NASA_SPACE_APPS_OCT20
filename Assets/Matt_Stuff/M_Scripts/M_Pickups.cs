@@ -45,7 +45,6 @@ public class M_Pickups : MonoBehaviour
     {
         if (this.CompareTag("Obstacle"))
         {
-            healthGained = -10;
             xpGained = -10;
             V_PlayerManager.instance.charStats.TakeDamage(healthGained);
             V_PlayerManager.instance.charStats.gainXP(xpGained);
@@ -54,7 +53,7 @@ public class M_Pickups : MonoBehaviour
 
         if (this.CompareTag("Pickup"))
         {
-           V_PlayerManager.instance.charStats.Heal(healthGained); //references character stats in the Playermanager Health
+          
            V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
             Debug.Log(" PickUp picked up");
         }
