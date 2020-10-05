@@ -387,6 +387,21 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6149948696315619823, guid: 6228494111ef5ee4fa5c00113a519003,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.15021288
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149948696315619823, guid: 6228494111ef5ee4fa5c00113a519003,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.01287511
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149948696315619823, guid: 6228494111ef5ee4fa5c00113a519003,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1463505
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6228494111ef5ee4fa5c00113a519003, type: 3}
 --- !u!1 &1076914194
@@ -691,8 +706,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HLane: 2
   VLane: 2
+  minSpeed: 30
   speed: 10
+  maxSpeed: 60
   lerpSpeed: 0.05
+  platformsPassed: 0
 --- !u!54 &1522555308
 Rigidbody:
   m_ObjectHideFlags: 0
