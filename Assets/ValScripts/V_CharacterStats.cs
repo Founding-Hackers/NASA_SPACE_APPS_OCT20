@@ -8,6 +8,11 @@ public class V_CharacterStats : MonoBehaviour
     public int currentHealth { get; private set; } //any class can get the value only change it in this class
     public int xp { get; private set; }
 
+    [SerializeField]
+    AudioClip bubble;
+    [SerializeField]
+    AudioClip slorp;
+
     public event System.Action<int, int> OnHealthChanged;
 
     private void Awake()
@@ -20,6 +25,7 @@ public class V_CharacterStats : MonoBehaviour
     {
         if (this != null)
         {
+            AudioManager.Instance.PlaySFX(bubble);
             damage = Mathf.Clamp(damage, 0, int.MaxValue); //prevents negative damage values 
 
             currentHealth -= damage;
@@ -39,6 +45,7 @@ public class V_CharacterStats : MonoBehaviour
 
     public void Heal(int healing)
     {
+        
         currentHealth += Mathf.Clamp(healing, 1, maxhealth); //prevents excessive Health
 
         if (OnHealthChanged != null)
@@ -49,6 +56,7 @@ public class V_CharacterStats : MonoBehaviour
 
     public void gainXP(int _xp) //Gain XP
     {
+        AudioManager.Instance.PlaySFX(slorp);
         xp += _xp;
     }
 

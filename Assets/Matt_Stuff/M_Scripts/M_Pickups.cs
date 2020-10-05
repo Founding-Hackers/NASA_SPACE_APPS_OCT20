@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class M_Pickups : MonoBehaviour
 {
    
     protected int healthGained = 10;
     protected int xpGained = 10;
+
 
     // Update is called once per frame
     Vector3[] rotationOptions = { new Vector3(10, 20, 30), new Vector3(-10, 20, 30),
@@ -49,6 +51,7 @@ public class M_Pickups : MonoBehaviour
             V_PlayerManager.instance.charStats.TakeDamage(healthGained);
             V_PlayerManager.instance.charStats.gainXP(xpGained);
             Debug.Log(" Obstacle picked up");
+
         }
 
         if (this.CompareTag("Pickup"))
@@ -56,6 +59,7 @@ public class M_Pickups : MonoBehaviour
           
            V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
             Debug.Log(" PickUp picked up");
+           
         }
     
             Destroy(this.gameObject);
