@@ -161,3 +161,78 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8316424146831533899}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &8315518972607936183 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4353798483923452, guid: c38932b15ae200c479a0783a6987432e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8316424146831533899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8326840542416464573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8315518972607936183}
+    m_Modifications:
+    - target: {fileID: 2719571414659573004, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_Name
+      value: RedGlow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274678969094708464, guid: 628fe701e18416b44ae4d46b225325ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 628fe701e18416b44ae4d46b225325ac, type: 3}
