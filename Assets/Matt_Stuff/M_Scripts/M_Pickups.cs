@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class M_Pickups : MonoBehaviour
 {
-
     protected int healthGained = 10;
     protected int xpGained = 10;
 
@@ -44,9 +43,9 @@ public class M_Pickups : MonoBehaviour
 
 
     void PickUp()
-    {
+    {            
 
-            
+
             V_PlayerManager.instance.charStats.Heal(healthGained); //references character stats in the Playermanager Health
             V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
             Destroy(gameObject);
