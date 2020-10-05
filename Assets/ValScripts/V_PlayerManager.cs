@@ -51,7 +51,7 @@ public class V_PlayerManager : MonoBehaviour
     public void KillPlayer()
     {
 
-        SceneManager.LoadScene("UIScene");
+        SceneManager.LoadScene("EndScene");
     }
 
 }
