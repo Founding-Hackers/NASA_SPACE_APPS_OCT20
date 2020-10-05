@@ -4,10 +4,23 @@
 
 > NASA Space apps submission October 2020: NASA, CSA, CNES, JAXA, and ESA invite you to “Take Action” from home on October 2-4 as part of an entirely virtual celebration of our 9th annual hackathon.
 
+
 >This is a special submission because it is also a submission for LUDUM DARE 2020 
 >I officially call this the Ludum Double Dare jam because we have 2 sets of restraints:
 + https://2020.spaceappschallenge.org/challenges/inform/mission-planet-earth-digital-history/details
 + https://ldjam.com/events/ludum-dare/47/
+
+>Turtle vs Trash Vortex is a game that was created by combining the themes from Nasa Space Apps Challenge and Ludum Dare. You play as Slorp the Turtle with his custom vacuum >pack and you slerp up the trash from the sea while avoiding the fish. It’s an Endless Runner where you speed up as you progress through the game and you aim to improve your >overall score. It was designed to bring attention to the very real problem of the Trash Vortexes and the Great Pacific Garbage patch but in a playful and engaging way.
+
+
+##Releases
+To play the game you can go to the releases and download the latest release:
++ https://github.com/Founding-Hackers/NASA_SPACE_APPS_OCT20/releases/tag/v1.0
+If ypu want to run the projct in unity you can follow the steps below
+
+
+#NOT ALL ASSETS PROVIDED HERE ARE FREE TO USE if it is under 3RD Party those are paid unity asset store assets and you do not have permission to use those
+
 
 ## Installation
 
