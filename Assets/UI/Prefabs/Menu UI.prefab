@@ -4824,7 +4824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a5fa76fe0a547ee842d7fecb84c442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuSettingsData: {fileID: 11400000, guid: f0eb3fc789dd1a341a1d1f2bda70c1f6, type: 2}
+  menuSettingsData: {fileID: 0}
   sceneToStart: 1
   changeScenes: 0
   changeMusicOnStart: 0
@@ -7493,8 +7493,19 @@ PrefabInstance:
     - target: {fileID: 9164055713483178995, guid: 1897e217c7b2df443beafb1985d3c31f,
         type: 3}
       propertyPath: m_text
-      value: "Valarie  - Programmer, manager\nVincent  - Gameplay programmer\nMatthew
-        - Programmer, level designer\nTyler - \nMichael - \n"
+      value: 'Valarie  - Programmer, manager
+
+        Vincent  - Gameplay programmer
+
+        Matthew
+        - Programmer, level designer
+
+        Tyler - Level Designer
+
+        Michael
+        - Music Composer
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 9164055713489888626, guid: 1897e217c7b2df443beafb1985d3c31f,
         type: 3}
