@@ -47,21 +47,25 @@ public class M_Pickups : MonoBehaviour
         {
             V_PlayerManager.instance.charStats.TakeDamage(healthGained);
             V_PlayerManager.instance.charStats.gainXP(-xpGained);
+            Debug.Log(" Obstacle picked up");
         }
 
-        if (this.CompareTag("PickUp"))
+        if (this.CompareTag("Pickup"))
         {
            V_PlayerManager.instance.charStats.Heal(healthGained); //references character stats in the Playermanager Health
            V_PlayerManager.instance.charStats.gainXP(xpGained); //references character stats in the Playermanager XP
+            Debug.Log(" PickUp picked up");
         }
     
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision Occurs");
         PickUp();
+
     }
 
 }
