@@ -65,7 +65,7 @@ public class M_Pickups : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision Occurs");
+        Debug.Log("Collision Occurs" + this.tag);
         PickUp();
 
     }
