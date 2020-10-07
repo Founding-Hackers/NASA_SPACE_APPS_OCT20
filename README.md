@@ -12,11 +12,11 @@
 
 >Turtle vs Trash Vortex is a game that was created by combining the themes from Nasa Space Apps Challenge and Ludum Dare. You play as Slorp the Turtle with his custom vacuum >pack and you slerp up the trash from the sea while avoiding the fish. It’s an Endless Runner where you speed up as you progress through the game and you aim to improve your >overall score. It was designed to bring attention to the very real problem of the Trash Vortexes and the Great Pacific Garbage patch but in a playful and engaging way.
 
-
 ##Releases
 To play the game you can go to the releases and download the latest release:
-+ https://github.com/Founding-Hackers/NASA_SPACE_APPS_OCT20/releases/tag/v1.0
-If ypu want to run the projct in unity you can follow the steps below
++ https://github.com/Founding-Hackers/NASA_SPACE_APPS_OCT20/releases/tag/v2.0
+
+If you want to run the project in Unity you can follow the steps below
 
 
 #NOT ALL ASSETS PROVIDED HERE ARE FREE TO USE if it is under 3RD Party those are paid unity asset store assets and you do not have permission to use those
